@@ -27,6 +27,6 @@ class Tfx < Formula
   end
 
   test do
-    system "tfx-v"
+    system "tfx -v"
   end
 end
