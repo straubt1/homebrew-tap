@@ -30,7 +30,7 @@ class Tfx < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/straubt1/tfx/releases/download/v0.1.3/tfx_Linux_x86_64.tar.gz"
-        sha256 "5d2dc26053e7e981100877179b6ddc2c2fbd6ad313afceb94e3fdd259f559ac8"
+        sha256 "62bec3183e2f0e6caadc01c1c5c164ff71dba27f883a1c5a6f95bdd09139f048"
 
         def install
           bin.install "tfx"
