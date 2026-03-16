@@ -11,7 +11,7 @@ class TfxLatest < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/straubt1/tfx/releases/download/latest/tfx-latest_Darwin_x86_64.tar.gz"
-      sha256 "9d252413c3940ad7083fd12879a718db98ca7173e6542d126438e0a060040ad8"
+      sha256 "94ec81b3340299bb3b90dd740a0504b528ca21f06e30f44ca43a784d2bc55891"
 
       define_method(:install) do
         bin.install "tfx-latest"
@@ -19,7 +19,7 @@ class TfxLatest < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/straubt1/tfx/releases/download/latest/tfx-latest_Darwin_arm64.tar.gz"
-      sha256 "44c175a1c949b0a79267dc91e0b2c4b34de4733230b84afd21f544d95ad40e15"
+      sha256 "fc4399a4fdc8f08ccc00a956e1abf5006778bc32cadc1b7601ca8f29c6c570eb"
 
       define_method(:install) do
         bin.install "tfx-latest"
@@ -30,14 +30,14 @@ class TfxLatest < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/straubt1/tfx/releases/download/latest/tfx-latest_Linux_x86_64.tar.gz"
-      sha256 "a4892dc7ef0c850ee5b0fbd33bb22fb34e5013c30cd9eef4f027c46837ef90c2"
+      sha256 "4a849042b217eaf87fc4cade83e3df91e0763dc5966ef55df53fe5c3c39824cc"
       define_method(:install) do
         bin.install "tfx-latest"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/straubt1/tfx/releases/download/latest/tfx-latest_Linux_arm64.tar.gz"
-      sha256 "67c8ca1d390726e37bae7a32ac971e95317b7ebf311f1be37ea1ae8f49e8c768"
+      sha256 "75a883a5d8215e801c3d6fa7314f9ca7d12592501cdac77517b264395d90b62a"
       define_method(:install) do
         bin.install "tfx-latest"
       end
