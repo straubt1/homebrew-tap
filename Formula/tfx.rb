@@ -5,21 +5,21 @@
 class Tfx < Formula
   desc "TFx is a standalone CLI tool for HCP Terraform and Terraform Enterprise."
   homepage "https://tfx.rocks/"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/straubt1/tfx/releases/download/v0.3.1/tfx_Darwin_x86_64.tar.gz"
-      sha256 "b1108a9938a109643fa08c88b39e50e3438d99a30e0d7f9e21f596ed84a36f0b"
+      url "https://github.com/straubt1/tfx/releases/download/v0.3.2/tfx_Darwin_x86_64.tar.gz"
+      sha256 "777ae5da775d34a595c5bfa0ab2408c40d2d69fe0e45949d8ef821d4647a37be"
 
       define_method(:install) do
         bin.install "tfx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/straubt1/tfx/releases/download/v0.3.1/tfx_Darwin_arm64.tar.gz"
-      sha256 "40658db70259a93847d7f00bc37cc738e934f0a195b977f66def6b5cd9d58aaf"
+      url "https://github.com/straubt1/tfx/releases/download/v0.3.2/tfx_Darwin_arm64.tar.gz"
+      sha256 "c0736338030c23cc6a9364ba64a3eb8110709ff9d6038fca68f680e3a8da5c31"
 
       define_method(:install) do
         bin.install "tfx"
@@ -29,15 +29,15 @@ class Tfx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/straubt1/tfx/releases/download/v0.3.1/tfx_Linux_x86_64.tar.gz"
-      sha256 "e6f19eb17958477e74ed15d41fc2dbb09d8c581ee6e6937d7f885dbd027ab16e"
+      url "https://github.com/straubt1/tfx/releases/download/v0.3.2/tfx_Linux_x86_64.tar.gz"
+      sha256 "3e90eccebf496a7fe3cd22978c415ff87f470aa605d5358f6e0be95c261a40dd"
       define_method(:install) do
         bin.install "tfx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/straubt1/tfx/releases/download/v0.3.1/tfx_Linux_arm64.tar.gz"
-      sha256 "eb1f3af05c6adb6f3f2a85c34d00712f077458db6a1d78c61c72bf4f426ecb69"
+      url "https://github.com/straubt1/tfx/releases/download/v0.3.2/tfx_Linux_arm64.tar.gz"
+      sha256 "3567bc16ff8336161db93618951a07fce0408915fe96a67ee95cdc878222f5af"
       define_method(:install) do
         bin.install "tfx"
       end
